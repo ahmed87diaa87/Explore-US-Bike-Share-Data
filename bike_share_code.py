@@ -48,14 +48,14 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = optimize_input('Which city data do you like to explore ?\nChicago, New york city or Washington.\n',1)
-
+    city = optimize_input('Which city data do you like to explore ?\nChicago, New york city or Washington.\n',1)    ### we are giving this input a rank 1 sothat if the answer is incorrect a specefic message
+                                                                                                                    ### will appear ('Undefined city!\nOnly data for Chicago, New york city, Washington are available.')
     # TO DO: get user input for month (all, january, february, ... , june)
-    month = optimize_input('Which month ?\nJanuary, February, March, April, May, June or all.\n',2)
-
+    month = optimize_input('Which month ?\nJanuary, February, March, April, May, June or all.\n',2)                 ### we are giving this input a rank 2 sothat if the answer is incorrect a specefic message
+                                                                                                                    ### will appear ('Undefined month!\nOnly data for the first six months are available.')
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    day = optimize_input('which day ?\nMonday, Tuesday, ... or all.\n',3)
-    print('-'*40)
+    day = optimize_input('which day ?\nMonday, Tuesday, ... or all.\n',3)                                           ### we are giving this input a rank 3 sothat if the answer is incorrect a specefic message
+    print('-'*40)                                                                                                   ### will appear ('Undefined day.')
     return city, month, day
 
 
